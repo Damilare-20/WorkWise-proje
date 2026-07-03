@@ -1,4 +1,3 @@
-// src/pages/JobDetails.jsx
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import {
@@ -69,7 +68,7 @@ function JobDetails() {
             to="/"
             className="inline-flex items-center gap-1 text-sky-600 font-medium text-sm hover:text-sky-700"
           >
-            ← Back to jobs
+            Back to jobs
           </Link>
         </div>
       </main>
@@ -98,9 +97,7 @@ function JobDetails() {
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-          {/* Main content */}
           <div className="lg:col-span-2 bg-white border border-slate-200 rounded-2xl shadow-sm p-8">
-            {/* Badges */}
             <div className="flex flex-wrap gap-2 mb-4">
               {job.employment_type && (
                 <span className="inline-block bg-sky-50 text-sky-700 text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full">
@@ -163,7 +160,6 @@ function JobDetails() {
             </div>
           </div>
 
-          {/* Sidebar */}
           <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 lg:sticky lg:top-8 space-y-5">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">
               Job overview
